@@ -4,6 +4,7 @@ Please use the link below to access the Tableau files:
 
 Tableau File Link: https://public.tableau.com/views/Module18Challenge_17104481869820/Analysisof2023CITIBikeRides-JanuaryJuly?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
 
+The Data that was used for this analysis was ride data from January 2023 and July 2023. I combined the two spreadsheets using Pandas before uploading it to Tableau as one sheet. 
 
 Analysis of 2023 Rides in January VS July
 
