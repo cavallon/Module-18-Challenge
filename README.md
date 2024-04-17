@@ -1,4 +1,4 @@
-# NYC Citi Bike Analyis
+# NYC Citi Bike Analysis
 
 Please use the link below to access the Tableau files:
 
