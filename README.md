@@ -1,12 +1,18 @@
 # NYC Citi Bike Analysis
 
-Please use the link below to access the Tableau files:
+# Summary:
+
+This project involves analyzing data from the New York Citi Bike program to generate reports for city officials, aiming to improve program publicity and performance. By aggregating trip history logs and identifying unexpected phenomena, visualizations and dashboards will be created in Tableau to provide insights into ridership patterns, station popularity, and other relevant metrics.
+
+# Tableau Link:
 
 Tableau File Link: https://public.tableau.com/views/Module18Challenge_17104481869820/Analysisof2023CITIBikeRides-JanuaryJuly?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
 
-The Data that was used for this analysis was ride data from January 2023 and July 2023. I combined the two spreadsheets using Pandas before uploading it to Tableau as one sheet. 
+# Data Source:
 
-Analysis of 2023 Rides in January VS July
+The Data that was used for this analysis was ride data from the Citi Bike Data webpage (https://www.citibikenyc.com/system-data). The time frame selected was January 2023 and July 2023 (2 months of total data). I combined the two spreadsheets using Pandas before uploading it to Tableau as one sheet. 
+
+# Analysis of 2023 Rides in January VS July
 
 1. Members VS Non-Members 
 
@@ -15,6 +21,8 @@ Based on a total of 2,000,000 unique rides, the majority of riders are members, 
 However, casual riders (non-members) increased by about the same amount between January and July. 
 Perhaps vacation or financial budgeting needs have a part to play in this. It could be that some people cancel the membership during summer, 
 and/or that there are more tourists using the bikes (whom do not have memberships). 
+
+![alt text](members_vs_nonmembers.png)
 
 2. Top 10 & Peak Hours
 
@@ -28,6 +36,8 @@ It appears that the start station is getting use from high school kids as well a
 The peak hours indicate a possible majority of commuters who work a somewhat normal variation of a 9 AM - 5 PM job, but the locations could also indicate 
 some student usage. 
 
+![alt text](top10_peakhrs.png)
+
 3. Bike Types: Distance & Count
 
 This dashboard showcases each bike by the type of bike that it is. The data shows that the majority of bikes are classic bikes, which is your standard bicycle. 
@@ -37,6 +47,8 @@ Further analysis would be needed to answer this question. I believe there is als
 to the information I have been able to find, most, if not all CITI Bikes are docked at docking stations. It appears that whether a bike is a classic bike, 
 or an electric bike, it has nothing to do with whether it is docked or not. 
 
+![alt text](biketypes_dist_count.png)
+
 4. Bottom 10 Stations
 
 This dashboard focuses on the bottom 10 start and end locations by ride count at the latitude of the start location. All of the bottom 10 start locations are outside of NYC. 
@@ -44,11 +56,15 @@ They are mixed between Hoboken and Jersey City. This tells us most people are no
 were a mix of different areas, but included Jersey City, Brooklyn, and queens. I believe this also confirms that most people are not using the bikes to commute outside 
 of Manhattan.  
 
+![alt text](bottom10_stations.png)
+
 5. 15 Longest Rides
 
 For this dashboard, I reviewed the trip duration between members and non-members. On average, non-member (casual) users had longer trip durations, but member users held the majority 
 share of the 15 longest rides. Furthermore, a member was responsible for the longest ride, which occured in January, the colder of the two months analysed. Perhaps casual users are 
 using the bikes less, but completing a longer trip, vs members who use the bikes more, but on shorter trips. 
+
+![alt text](15_longest_rides.png)
 
 6. Bike Station Map
 
@@ -62,3 +78,5 @@ of start and end data by ride count.
 It appears the start station data has some anamolies. In some cases, multiple start station locations show up for what should be a single location only. This is not the case for the end stations. 
 Is it possible the bikes could be mis-coded? In addition to zip code data, I overlayed the male female ratio, and it appears the top start and end stations are in areas with 
 slightly higher male populations vs female. 
+
+![alt text](bike_station_map.png)
